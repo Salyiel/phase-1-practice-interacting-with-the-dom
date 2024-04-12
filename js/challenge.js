@@ -9,7 +9,6 @@ timer.addEventListener('DOMContentLoaded',(function () {
     }, 1000)
 
 }));
-
 // const pause = document.getElementById("pause");
 
 
