@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const togglePause = () => {
       if (pauseButton.textContent === 'pause') {
-        clearInterval(timerInterval);
+        clearInterval(timerInterval); // Pause the timer immediately
         minusButton.disabled = true;
         plusButton.disabled = true;
         heartButton.disabled = true;
         pauseButton.textContent = 'resume';
       } else {
-        timerInterval = setInterval(incrementCounter, 1000);
+        timerInterval = setInterval(incrementCounter, 1000); // Resume the timer
         minusButton.disabled = false;
         plusButton.disabled = false;
         heartButton.disabled = false;
